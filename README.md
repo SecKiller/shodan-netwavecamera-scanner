@@ -49,8 +49,15 @@ Attention
 
 Use this tool wisely and not for evil. To get the best performece of this tool you need to pay for shodan to get full API access Options --limit and --offset may need a paying API key and consume query credits from your Shodan account.
 
+
 References:
 
+
 Shodan API search engine for Internet-connected devices.
+
 Requests Requests: HTTP for Humans
+
 Netwave Exploit Netwave IP Camera - Password Disclosure
+
+
+Greeting to EternalSec Team :)
