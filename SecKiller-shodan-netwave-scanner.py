@@ -35,10 +35,10 @@ class backgroundColor:
 def main() :
 
  Graph = Figlet(font='slant')
- GraphRender = Graph.renderText('shodan netwave scanner By SecKiller')
+ GraphRender = Graph.renderText('By SecKiller')
 
  print("%s" % (backgroundColor.WARNING + GraphRender + backgroundColor.ENDC))
- print(backgroundColor.FAIL + "\rThis tool is successfully connected to shodan service\nInformation the use of this tool is illegal, not bad.\n" + backgroundColor.ENDC)
+ print(backgroundColor.FAIL + "\rThe Netwave Scanner is successfully connected to shodan service\nInformation the use of this tool is illegal, not bad.\n" + backgroundColor.ENDC)
 
  parser = argparse.ArgumentParser()
  parser.add_argument('-s','--search', dest='search', default='Netwave', type=str, help='Default Netwave IP Camera')
@@ -57,11 +57,11 @@ def main() :
  try:
 
   if sys.argv[2] == "-h" or sys.argv[2] == "--help":
-   print "Usage: python shodanwave.py --help"
+   print "Usage: python SecKiller-shodan-netwave-scanner.py --help"
    sys.exit(0)
  except Exception as e:
    print("%s" % (backgroundColor.WARNING + GraphRender + backgroundColor.ENDC))
-   print "Usage: python shodanwave.py --help"
+   print "Usage: python SecKiller-shodan-netwave-scanner.py --help"
    sys.exit(0)
 
  def signal_handler(signal, frame):
