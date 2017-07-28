@@ -1,7 +1,7 @@
 # shodan-netwavecamera-scanner
 
 
-Shodanwave is a tool for exploring and obtaining information from cameras specifically Netwave IP Camera. The tool uses a search engine called shodan that makes it easy to search for cameras online.
+Shodan netwave scanner is a tool for exploring and obtaining information from cameras specifically Netwave IP Camera. The tool uses a search engine called shodan that makes it easy to search for cameras online.
 
 What does the tool to? Look, a list!
 
@@ -13,20 +13,20 @@ What does the tool to? Look, a list!
  
 
 ### How to use?
-To use shodanwave you need an api key which you can get for free at https://www.shodan.io/, then you need to follow the next steps.
+To use shodan netwave scanner you need an api key which you can get for free at https://www.shodan.io/, then you need to follow the next steps.
 
 ### Installation
 
 ```
 $ cd /opt/
 $ git clone https://github.com/fbctf/shodanwave.git
-$ cd shodanwave
+$ cd SecKiller-shodan-netwave-scanner
 $ pip install -r requirements.txt
 ```
 ### Usage
 ```
-Usage: python shodanwave.py -u usernames.txt -w passwords.txt  -k Shodan API key
-       python shodanwave.py --help 
+Usage: python SecKiller-shodan-netwave-scanner.py -u usernames.txt -w passwords.txt  -k Shodan API key
+       python SecKiller-shodan-netwave-scanner.py --help 
 	   
          __              __                                   
   _____/ /_  ____  ____/ /___ _____
@@ -56,7 +56,7 @@ Usage: python shodanwave.py -u usernames.txt -w passwords.txt  -k Shodan API key
 This tool is successfully connected to shodan service
 Information the use of this tool is illegal, not bad.
 
-usage: shodanwave.py [-h] [-s SEARCH] [-u USERNAME] [-w PASSWORD] [-k ADDRESS]
+usage: SecKiller-shodan-netwave-scanner.py [-h] [-s SEARCH] [-u USERNAME] [-w PASSWORD] [-k ADDRESS]
 
 optional arguments:
   -h, --help            show this help message and exit
