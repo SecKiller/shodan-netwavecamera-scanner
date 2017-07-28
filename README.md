@@ -19,8 +19,8 @@ To use shodan netwave scanner you need an api key which you can get for free at 
 
 ```
 $ cd /opt/
-$ git clone https://github.com/fbctf/shodanwave.git
-$ cd SecKiller-shodan-netwave-scanner
+$ git clone https://github.com/SecKiller/shodan-netwavecamera-scanner.git
+$ cd shodan-netwavecamera-scanner
 $ pip install -r requirements.txt
 ```
 ### Usage
