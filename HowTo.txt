@@ -1,0 +1,138 @@
+
+
+#########################################################   Netwave IP Camera - Password Disclosure  ###########################################################
+
+
+Hi 
+
+first Greeting to all people who try to detect security VULN and work hard to fix it :)
+
+On this new HowTo i will show you how you can scan for VULN detcted on Netwave IP Camera with shodan 
+
+
+Let's start it :)
+
+
+First of all you need to create account on shodan web site and get your API with it you ca scan and get all the hosted Netwave IP Camera Server 
+
+
+it's my API  
+
+API Key: fOG9FXEkOqbEO4kuGttJTCl14n4UHiRv
+
+so next you need root for where you start scanning and script for scan you can found it on my Github 
+
+
+Github Scanner : https://github.com/SecKiller/shodan-netwavecamera-scanner
+
+
+
+let connecte to our root now that we got access to our root let git our script and start scanning 
+
+
+befor start scanning you have to prepare you username and password list 
+
+
+in my case i put less as i can i show you 
+
+
+also you have to install some requement needed by the scanner 
+
+
+to do this use this CMD  
+
+
+pip install -r requirements.txt
+
+
+you can check the content of the requirements.txt file to see the pre-requeste needed 
+
+
+as you see all the requirements needed are already setup on my server so now let's start scanning for some VULN server 
+
+
+
+to do this you have to execute the CMd Below 
+
+
+
+
+python SecKiller-shodan-netwave-scanner.py -u usernames.txt -w passwords.txt -k fOG9FXEkOqbEO4kuGttJTCl14n4UHiRv -t Out-Wave.txt
+
+
+
+
+
+i expain every part of the cmd 
+
+
+
+-u  the path of your usernames file 
+
+-w the path of your password list file 
+
+-k your Shodan API Key 
+
+-t the output file where all the scan result will be saved 
+
+L'ets do it 
+
+as you se scanner is connected to shodan service 
+
+
+so for this line you have to answer yes 
+
+] Disable password discovery module? (Yes/no):  yes 
+
+
+
+The scan will take long time to finish its depend on your dork i will show you how to edit the dork on the scanner 
+
+
+so in my case i already scanned some server let me show you the result :)
+
+and test some login 
+
+as you see we are in :)  
+
+so for people who don't know for whats it's used this go first search about the NetWave and then came here again to start exploiting :)
+
+
+also ad i told you i wil show you from where you can change your dork let's do it 
+
+
+first start editing your scaner source code 
+
+nano SecKiller-shodan-netwave-scanner.py
+
+
+serach for this line 
+
+
+parser.add_argument('-s','--search', dest='search', default='Your New Dork', type=str, help='Default Netwave IP Camera')
+
+and edit this value default='Netwave'    dont remove the quote ''  just put your dork betwen the two quote like this 
+
+and save your file ^:)
+
+
+Hope you Enjoy this Howto 
+
+
+
+Big Up to All Eternal Security Team   
+
+
+Follow Us on Our Youtube Channel  Eyternal security 
+
+
+Freindly 
+
+SecKiller 
+
+
+Cia
+
+
+
+
